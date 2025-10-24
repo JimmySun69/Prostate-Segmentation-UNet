@@ -1,1 +1,3 @@
 Pattern Recognition Project
+
+ProstateUNet-s4834213 is my COMP3710 recognition task: a minimal 3D prostate MRI segmentation pipeline using an improved 3D U-Net in PyTorch/MONAI. This folder includes dataset.py, modules.py, train.py, and an optional SLURM script run.sh for Rangpur. Run locally with python train.py --images_dir <path> --labels_dir <path> --out_dir runs/exp1 (or sbatch run.sh on Rangpur). Training writes best_model.pth, training_curve.png, and final_dice_score.txt. Current baseline (211 image–label pairs, 6 classes) achieved best val loss = 0.1094 and mean val Dice = 0.1101.
