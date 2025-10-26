@@ -1,27 +1,6 @@
 Using device: cuda
 Found 211 image–label pairs.
 Detected 6 unique label classes: [0.0, 1.0, 2.0, 3.0, 4.0, 5.0]
-Saved visualization to runs/Custom_UNet3D/prediction_S033_Week0_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_S033_Week1_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_S033_Week2_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_S033_Week3_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_S033_Week4_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_S033_Week5_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_S033_Week6_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_S033_Week7_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_S035_Week0_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T009_Week0_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T014_Week0_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T014_Week1_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T014_Week2_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T014_Week3_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T014_Week4_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T014_Week5_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T014_Week6_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_T014_Week7_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_V027_Week0_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_V027_Week1_LFOV.nii.png
-Saved visualization to runs/Custom_UNet3D/prediction_V027_Week2_LFOV.nii.png
 Saved visualization to runs/Custom_UNet3D/prediction_V027_Week3_LFOV.nii.png
 Saved visualization to runs/Custom_UNet3D/prediction_V027_Week4_LFOV.nii.png
 Saved visualization to runs/Custom_UNet3D/prediction_V027_Week5_LFOV.nii.png
@@ -45,4 +24,4 @@ Saved visualization to runs/Custom_UNet3D/prediction_W029_Week6_LFOV.nii.png
 Saved visualization to runs/Custom_UNet3D/prediction_W029_Week7_LFOV.nii.png
 Saved visualization to runs/Custom_UNet3D/prediction_W041_Week0_LFOV.nii.png
 
-Completed generating predictions for 43 validation images.
+Completed generating predictions for 22 test images.

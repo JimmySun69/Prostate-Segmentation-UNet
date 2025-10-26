@@ -1,0 +1,454 @@
+Using device: cuda
+Detected 6 unique label classes: [0.0, 1.0, 2.0, 3.0, 4.0, 5.0]
+Found 211 image–label pairs.
+
+--- Epoch 1/100 ---
+Train Loss: 2.2040
+Validation Mean Dice (no BG): 0.2515
+Saved best model (Val Dice = 0.2515)
+
+--- Epoch 2/100 ---
+Train Loss: 1.9314
+Validation Mean Dice (no BG): 0.3836
+Saved best model (Val Dice = 0.3836)
+
+--- Epoch 3/100 ---
+Train Loss: 1.7623
+Validation Mean Dice (no BG): 0.4279
+Saved best model (Val Dice = 0.4279)
+
+--- Epoch 4/100 ---
+Train Loss: 1.6216
+Validation Mean Dice (no BG): 0.4519
+Saved best model (Val Dice = 0.4519)
+
+--- Epoch 5/100 ---
+Train Loss: 1.5203
+Validation Mean Dice (no BG): 0.4636
+Saved best model (Val Dice = 0.4636)
+
+--- Epoch 6/100 ---
+Train Loss: 1.4113
+Validation Mean Dice (no BG): 0.4665
+Saved best model (Val Dice = 0.4665)
+
+--- Epoch 7/100 ---
+Train Loss: 1.3348
+Validation Mean Dice (no BG): 0.5097
+Saved best model (Val Dice = 0.5097)
+
+--- Epoch 8/100 ---
+Train Loss: 1.2663
+Validation Mean Dice (no BG): 0.5311
+Saved best model (Val Dice = 0.5311)
+
+--- Epoch 9/100 ---
+Train Loss: 1.2156
+Validation Mean Dice (no BG): 0.5428
+Saved best model (Val Dice = 0.5428)
+
+--- Epoch 10/100 ---
+Train Loss: 1.1466
+Validation Mean Dice (no BG): 0.5436
+Saved best model (Val Dice = 0.5436)
+
+--- Epoch 11/100 ---
+Train Loss: 1.0981
+Validation Mean Dice (no BG): 0.6144
+Saved best model (Val Dice = 0.6144)
+
+--- Epoch 12/100 ---
+Train Loss: 1.0616
+Validation Mean Dice (no BG): 0.6047
+
+--- Epoch 13/100 ---
+Train Loss: 1.0162
+Validation Mean Dice (no BG): 0.6132
+
+--- Epoch 14/100 ---
+Train Loss: 1.0100
+Validation Mean Dice (no BG): 0.5804
+
+--- Epoch 15/100 ---
+Train Loss: 0.9727
+Validation Mean Dice (no BG): 0.6154
+Saved best model (Val Dice = 0.6154)
+
+--- Epoch 16/100 ---
+Train Loss: 0.9174
+Validation Mean Dice (no BG): 0.6480
+Saved best model (Val Dice = 0.6480)
+
+--- Epoch 17/100 ---
+Train Loss: 0.9053
+Validation Mean Dice (no BG): 0.6093
+
+--- Epoch 18/100 ---
+Train Loss: 0.8815
+Validation Mean Dice (no BG): 0.6918
+Saved best model (Val Dice = 0.6918)
+
+--- Epoch 19/100 ---
+Train Loss: 0.8733
+Validation Mean Dice (no BG): 0.6968
+Saved best model (Val Dice = 0.6968)
+
+--- Epoch 20/100 ---
+Train Loss: 0.8311
+Validation Mean Dice (no BG): 0.7328
+Saved best model (Val Dice = 0.7328)
+
+--- Epoch 21/100 ---
+Train Loss: 0.8348
+Validation Mean Dice (no BG): 0.7137
+
+--- Epoch 22/100 ---
+Train Loss: 0.8166
+Validation Mean Dice (no BG): 0.7516
+Saved best model (Val Dice = 0.7516)
+
+--- Epoch 23/100 ---
+Train Loss: 0.7833
+Validation Mean Dice (no BG): 0.7975
+Saved best model (Val Dice = 0.7975)
+
+--- Epoch 24/100 ---
+Train Loss: 0.7849
+Validation Mean Dice (no BG): 0.8007
+Saved best model (Val Dice = 0.8007)
+
+--- Epoch 25/100 ---
+Train Loss: 0.7753
+Validation Mean Dice (no BG): 0.8064
+Saved best model (Val Dice = 0.8064)
+
+--- Epoch 26/100 ---
+Train Loss: 0.7543
+Validation Mean Dice (no BG): 0.8462
+Saved best model (Val Dice = 0.8462)
+
+--- Epoch 27/100 ---
+Train Loss: 0.7349
+Validation Mean Dice (no BG): 0.8476
+Saved best model (Val Dice = 0.8476)
+
+--- Epoch 28/100 ---
+Train Loss: 0.7107
+Validation Mean Dice (no BG): 0.8571
+Saved best model (Val Dice = 0.8571)
+
+--- Epoch 29/100 ---
+Train Loss: 0.7153
+Validation Mean Dice (no BG): 0.8610
+Saved best model (Val Dice = 0.8610)
+
+--- Epoch 30/100 ---
+Train Loss: 0.6804
+Validation Mean Dice (no BG): 0.8458
+
+--- Epoch 31/100 ---
+Train Loss: 0.6823
+Validation Mean Dice (no BG): 0.8653
+Saved best model (Val Dice = 0.8653)
+
+--- Epoch 32/100 ---
+Train Loss: 0.6518
+Validation Mean Dice (no BG): 0.8226
+
+--- Epoch 33/100 ---
+Train Loss: 0.6443
+Validation Mean Dice (no BG): 0.8140
+
+--- Epoch 34/100 ---
+Train Loss: 0.6484
+Validation Mean Dice (no BG): 0.8233
+
+--- Epoch 35/100 ---
+Train Loss: 0.6707
+Validation Mean Dice (no BG): 0.8249
+
+--- Epoch 36/100 ---
+Train Loss: 0.6358
+Validation Mean Dice (no BG): 0.8793
+Saved best model (Val Dice = 0.8793)
+
+--- Epoch 37/100 ---
+Train Loss: 0.6138
+Validation Mean Dice (no BG): 0.8337
+
+--- Epoch 38/100 ---
+Train Loss: 0.6095
+Validation Mean Dice (no BG): 0.8520
+
+--- Epoch 39/100 ---
+Train Loss: 0.6084
+Validation Mean Dice (no BG): 0.8573
+
+--- Epoch 40/100 ---
+Train Loss: 0.6083
+Validation Mean Dice (no BG): 0.8790
+
+--- Epoch 41/100 ---
+Train Loss: 0.5804
+Validation Mean Dice (no BG): 0.8439
+
+--- Epoch 42/100 ---
+Train Loss: 0.5930
+Validation Mean Dice (no BG): 0.8383
+
+--- Epoch 43/100 ---
+Train Loss: 0.5808
+Validation Mean Dice (no BG): 0.8527
+
+--- Epoch 44/100 ---
+Train Loss: 0.5559
+Validation Mean Dice (no BG): 0.8699
+
+--- Epoch 45/100 ---
+Train Loss: 0.5660
+Validation Mean Dice (no BG): 0.8683
+
+--- Epoch 46/100 ---
+Train Loss: 0.5520
+Validation Mean Dice (no BG): 0.8977
+Saved best model (Val Dice = 0.8977)
+
+--- Epoch 47/100 ---
+Train Loss: 0.5560
+Validation Mean Dice (no BG): 0.8882
+
+--- Epoch 48/100 ---
+Train Loss: 0.5486
+Validation Mean Dice (no BG): 0.8770
+
+--- Epoch 49/100 ---
+Train Loss: 0.5400
+Validation Mean Dice (no BG): 0.8551
+
+--- Epoch 50/100 ---
+Train Loss: 0.5323
+Validation Mean Dice (no BG): 0.8920
+
+--- Epoch 51/100 ---
+Train Loss: 0.5465
+Validation Mean Dice (no BG): 0.8999
+Saved best model (Val Dice = 0.8999)
+
+--- Epoch 52/100 ---
+Train Loss: 0.5255
+Validation Mean Dice (no BG): 0.8953
+
+--- Epoch 53/100 ---
+Train Loss: 0.5311
+Validation Mean Dice (no BG): 0.8832
+
+--- Epoch 54/100 ---
+Train Loss: 0.5231
+Validation Mean Dice (no BG): 0.8963
+
+--- Epoch 55/100 ---
+Train Loss: 0.5251
+Validation Mean Dice (no BG): 0.9015
+Saved best model (Val Dice = 0.9015)
+
+--- Epoch 56/100 ---
+Train Loss: 0.5074
+Validation Mean Dice (no BG): 0.8443
+
+--- Epoch 57/100 ---
+Train Loss: 0.5147
+Validation Mean Dice (no BG): 0.8976
+
+--- Epoch 58/100 ---
+Train Loss: 0.5273
+Validation Mean Dice (no BG): 0.8758
+
+--- Epoch 59/100 ---
+Train Loss: 0.5088
+Validation Mean Dice (no BG): 0.8818
+
+--- Epoch 60/100 ---
+Train Loss: 0.4898
+Validation Mean Dice (no BG): 0.8829
+
+--- Epoch 61/100 ---
+Train Loss: 0.5094
+Validation Mean Dice (no BG): 0.8952
+
+--- Epoch 62/100 ---
+Train Loss: 0.4961
+Validation Mean Dice (no BG): 0.9053
+Saved best model (Val Dice = 0.9053)
+
+--- Epoch 63/100 ---
+Train Loss: 0.4896
+Validation Mean Dice (no BG): 0.8945
+
+--- Epoch 64/100 ---
+Train Loss: 0.4951
+Validation Mean Dice (no BG): 0.8739
+
+--- Epoch 65/100 ---
+Train Loss: 0.4910
+Validation Mean Dice (no BG): 0.8847
+
+--- Epoch 66/100 ---
+Train Loss: 0.4829
+Validation Mean Dice (no BG): 0.8962
+
+--- Epoch 67/100 ---
+Train Loss: 0.4916
+Validation Mean Dice (no BG): 0.8954
+
+--- Epoch 68/100 ---
+Train Loss: 0.4816
+Validation Mean Dice (no BG): 0.9038
+
+--- Epoch 69/100 ---
+Train Loss: 0.4852
+Validation Mean Dice (no BG): 0.8977
+
+--- Epoch 70/100 ---
+Train Loss: 0.4748
+Validation Mean Dice (no BG): 0.9071
+Saved best model (Val Dice = 0.9071)
+
+--- Epoch 71/100 ---
+Train Loss: 0.4746
+Validation Mean Dice (no BG): 0.9108
+Saved best model (Val Dice = 0.9108)
+
+--- Epoch 72/100 ---
+Train Loss: 0.4813
+Validation Mean Dice (no BG): 0.9056
+
+--- Epoch 73/100 ---
+Train Loss: 0.4627
+Validation Mean Dice (no BG): 0.9068
+
+--- Epoch 74/100 ---
+Train Loss: 0.4768
+Validation Mean Dice (no BG): 0.8777
+
+--- Epoch 75/100 ---
+Train Loss: 0.4810
+Validation Mean Dice (no BG): 0.9001
+
+--- Epoch 76/100 ---
+Train Loss: 0.4721
+Validation Mean Dice (no BG): 0.9084
+
+--- Epoch 77/100 ---
+Train Loss: 0.4749
+Validation Mean Dice (no BG): 0.8864
+
+--- Epoch 78/100 ---
+Train Loss: 0.4628
+Validation Mean Dice (no BG): 0.8954
+
+--- Epoch 79/100 ---
+Train Loss: 0.4740
+Validation Mean Dice (no BG): 0.8989
+
+--- Epoch 80/100 ---
+Train Loss: 0.4716
+Validation Mean Dice (no BG): 0.8991
+
+--- Epoch 81/100 ---
+Train Loss: 0.4535
+Validation Mean Dice (no BG): 0.8999
+
+--- Epoch 82/100 ---
+Train Loss: 0.4581
+Validation Mean Dice (no BG): 0.9113
+Saved best model (Val Dice = 0.9113)
+
+--- Epoch 83/100 ---
+Train Loss: 0.4749
+Validation Mean Dice (no BG): 0.9136
+Saved best model (Val Dice = 0.9136)
+
+--- Epoch 84/100 ---
+Train Loss: 0.4408
+Validation Mean Dice (no BG): 0.8887
+
+--- Epoch 85/100 ---
+Train Loss: 0.4545
+Validation Mean Dice (no BG): 0.8942
+
+--- Epoch 86/100 ---
+Train Loss: 0.4600
+Validation Mean Dice (no BG): 0.9092
+
+--- Epoch 87/100 ---
+Train Loss: 0.4373
+Validation Mean Dice (no BG): 0.9027
+
+--- Epoch 88/100 ---
+Train Loss: 0.4501
+Validation Mean Dice (no BG): 0.9113
+
+--- Epoch 89/100 ---
+Train Loss: 0.4559
+Validation Mean Dice (no BG): 0.9160
+Saved best model (Val Dice = 0.9160)
+
+--- Epoch 90/100 ---
+Train Loss: 0.4589
+Validation Mean Dice (no BG): 0.9121
+
+--- Epoch 91/100 ---
+Train Loss: 0.4560
+Validation Mean Dice (no BG): 0.9089
+
+--- Epoch 92/100 ---
+Train Loss: 0.4611
+Validation Mean Dice (no BG): 0.8989
+
+--- Epoch 93/100 ---
+Train Loss: 0.4501
+Validation Mean Dice (no BG): 0.8890
+
+--- Epoch 94/100 ---
+Train Loss: 0.4591
+Validation Mean Dice (no BG): 0.8933
+
+--- Epoch 95/100 ---
+Train Loss: 0.4418
+Validation Mean Dice (no BG): 0.9025
+
+--- Epoch 96/100 ---
+Train Loss: 0.4330
+Validation Mean Dice (no BG): 0.9016
+
+--- Epoch 97/100 ---
+Train Loss: 0.4394
+Validation Mean Dice (no BG): 0.8996
+
+--- Epoch 98/100 ---
+Train Loss: 0.4423
+Validation Mean Dice (no BG): 0.9114
+
+--- Epoch 99/100 ---
+Train Loss: 0.4382
+Validation Mean Dice (no BG): 0.9132
+
+--- Epoch 100/100 ---
+Train Loss: 0.4353
+Validation Mean Dice (no BG): 0.9045
+
+Training complete. Best validation Mean Dice (no BG): 0.9160
+
+Evaluating final Dice score per class on validation set...
+
+--- Final Per-Class Dice Scores ---
+Background: 0.9962
+Body Outline: 0.9861
+Bone: 0.9266
+Bladder: 0.9457
+Rectum: 0.8785
+Prostate: 0.8432
+
+Mean Dice (no BG): 0.9160
+
+Saved final Dice scores to runs/Custom_UNet3D/final_dice_score.txt
