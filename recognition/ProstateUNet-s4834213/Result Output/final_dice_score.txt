@@ -1,0 +1,8 @@
+Dice score for Background: 0.9962
+Dice score for Body Outline: 0.9861
+Dice score for Bone: 0.9266
+Dice score for Bladder: 0.9457
+Dice score for Rectum: 0.8785
+Dice score for Prostate: 0.8432
+
+Mean Dice (no BG): 0.9160
