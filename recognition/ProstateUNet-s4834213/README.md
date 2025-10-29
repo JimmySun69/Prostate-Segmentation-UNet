@@ -42,7 +42,7 @@ Submission for: Hard Difficulty — 3D Prostate Segmentation with CAN3D
 - **What:** 3D semantic segmentation of HipMRI prostate volumes (6 classes: background, body outline, bone, bladder, rectum, prostate).
 - **Why:** Accurate, context-aware organ masks support downstream clinical/analysis tasks; prostate is small → needs strong multi-scale context.
 - **Model:** Improved **3D U-Net** with a **dilated Context Aggregation (CAN) bottleneck** (rates 2/4/8) + **AdaIN/InstanceNorm** for contrast robustness.
-- **Training recipe:** PyTorch only (no MONAI), **Dice + Cross-Entropy** loss, Adam (lr=1e-4), patch size **96×96×96**, balanced pos/neg crops, flips, fixed seed (42).
+- **Training recipe:** PyTorch, **Dice + Cross-Entropy** loss, Adam (lr=1e-4), patch size **96×96×96**, balanced pos/neg crops, flips, fixed seed (42).
 - **Inference:** Sliding-window **with Gaussian blending** to remove tiling seams; saves overlays per case.
 - **Val metrics:** **Mean Dice (no background) = 0.916**; **Prostate Dice = 0.843**.
 - **Artifacts:** `final_dice_score.txt` (per-class), `training_curve.png` (learning curve), `prediction_*.png` (qualitative) are saved in Result Output.
