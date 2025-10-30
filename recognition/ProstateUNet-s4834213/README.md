@@ -308,7 +308,7 @@ class ImprovedUNet3D_CAN(nn.Module):
 
 **Pairing, split, and loaders**
 - `collect_case_pairs(...)` robustly matches image/label stems (handles suffixes like `_LFOV` / `_SEMANTIC`).
-- Default split: **80/10/10** for train/val/test.
+- Default split: **80/10/10** for train/val/test. We use an 80/10/10 subject-level split to prevent train/val/test leakage across the same patient’s longitudinal scans, keep enough validation cases for tuning, and reserve a held-out test set for final reporting.
 - `ProstateDataset` applies a two‑stage transform pipeline: pre‑crop transforms → pos/neg crop → post‑crop transforms (per patch).
 - `get_dataloaders(...)` returns PyTorch DataLoaders for training and validation (test set is used by `predict.py`).
 

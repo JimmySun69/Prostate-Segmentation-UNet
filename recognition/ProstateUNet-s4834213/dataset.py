@@ -2,7 +2,6 @@
 """
 Contains all components for loading and preprocessing the 3D prostate dataset
 using standard PyTorch and custom, self-contained transforms.
-MODIFIED to include a padding transform to fix tensor stacking errors.
 """
 from pathlib import Path
 import numpy as np
@@ -24,7 +23,7 @@ class Compose:
         """
         self.transforms = transforms
         
-    def __call__(self, data): # <-- This was the line with the typo
+    def __call__(self, data):
         """
         Applies each transform in the list to the data dictionary.
 
@@ -141,7 +140,6 @@ class RandCropByPosNegLabel:
         # Return a list of dictionaries, one for each cropped sample
         return cropped_samples
 
-# --- NEW TRANSFORM CLASS TO FIX THE ERROR ---
 class PadToSize:
     """Pads image and label to a target spatial size."""
     def __init__(self, spatial_size):

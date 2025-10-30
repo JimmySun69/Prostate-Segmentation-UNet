@@ -1,7 +1,7 @@
 # train.py
 """
 Main training script for the Improved 3D U-Net, using a fully custom,
-non-monai pipeline for loss and metrics.
+pipeline for loss and metrics.
 """
 import os
 import argparse
@@ -17,7 +17,7 @@ from modules import ImprovedUNet3D_CAN
 from dataset import get_dataloaders, infer_num_classes
 
 # ===================================================================
-# Custom Loss Function (formerly from MONAI)
+# Custom Loss Function
 # ===================================================================
 
 class DiceCELoss(nn.Module):
@@ -69,7 +69,7 @@ class DiceCELoss(nn.Module):
         return self.ce_weight * ce_loss + self.dice_weight * dice_loss
 
 # ===================================================================
-# Custom Metric Calculation (formerly from MONAI)
+# Custom Metric Calculation
 # ===================================================================
 
 def calculate_dice_per_class(logits, targets, num_classes, smooth=1e-6):
