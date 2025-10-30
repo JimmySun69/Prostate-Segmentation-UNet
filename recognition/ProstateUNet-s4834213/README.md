@@ -21,7 +21,7 @@ Submission for: Hard Difficulty — 3D Prostate Segmentation with CAN3D
 - [Implementation Details](#5-implementation-details)
   - [Model Definition](#51-model-definition-modulespy)
   - [Loss Metrics](#52-loss--metrics-trainpy)
-  - [Data Pipeline](#53-data-pipeline-datasetpy)
+  - [Preprocessing](#53-data-preprocessing-datasetpy)
   - [Training Loop](#54-training-loop-trainpy)
   - [Prediction and Visualization](#55-inference--visualization-predictpy)
 - [Results](#6-results)
@@ -296,9 +296,26 @@ class ImprovedUNet3D_CAN(nn.Module):
 - Computes per‑class Dice from argmax predictions on validation/test.
 - Mean Dice is reported **excluding background** and used for model selection.
 
+**Key methods**
+```python
+class DiceCELoss:
+    def forward(logits, targets):
+        ce = CrossEntropy(logits, targets)
+        probs = softmax(logits)
+        onehot = one_hot(targets)
+        dice = (2*SUM(probs*onehot)+ε) / (SUM(probs+onehot)+ε)
+        RETURN ce + (1 - MEAN(dice))
+def calculate_dice_per_class(logits, targets, C):
+    probs = softmax(logits)
+    preds = argmax(probs)
+    onehot_p, onehot_t = one_hot(preds), one_hot(targets)
+    dice = (2*SUM(onehot_p*onehot_t)+ε) / (SUM(onehot_p+onehot_t)+ε)
+    RETURN dice_per_class
+```
+
 ---
 
-### 5.3) Data Pipeline (`dataset.py`)
+### 5.3) Data Preprocessing (`dataset.py`)
 **Self‑contained transforms**
 - **Loading:** nibabel NIfTI reader for images and labels.
 - **Channel order:** `EnsureChannelFirst` → `(C, D, H, W)`.
@@ -311,6 +328,20 @@ class ImprovedUNet3D_CAN(nn.Module):
 - Default split: **80/10/10** for train/val/test. We use an 80/10/10 subject-level split to prevent train/val/test leakage across the same patient’s longitudinal scans, keep enough validation cases for tuning, and reserve a held-out test set for final reporting.
 - `ProstateDataset` applies a two‑stage transform pipeline: pre‑crop transforms → pos/neg crop → post‑crop transforms (per patch).
 - `get_dataloaders(...)` returns PyTorch DataLoaders for training and validation (test set is used by `predict.py`).
+
+**Key methods**
+```python
+class RandCropByPosNegLabel:
+    def __call__(data):
+        pick random center from foreground or background
+        crop 3D patch (image + label) around center
+        return cropped pair
+class ProstateDataset:
+    def __getitem__(i):
+        load image & label
+        apply transforms (crop, normalize, tensorize)
+        return {"image": tensor, "label": tensor}
+```
 
 ---
 
@@ -327,6 +358,23 @@ class ImprovedUNet3D_CAN(nn.Module):
 **Validation & checkpointing**
 - After each epoch, compute **per‑class Dice** on the validation set (mean Dice excludes background).
 - Save `best_model.pth` whenever mean Dice improves.
+
+**Key methods**
+```python
+def train():
+    setup model = ImprovedUNet3D_CAN, loss = DiceCELoss, optimizer = Adam
+    for each epoch:
+        model.train()
+        for each batch in train_loader:
+            out = model(imgs)
+            loss = criterion(out, lbls)
+            backprop + optimizer.step()
+        model.eval()
+        val_dice = mean(calculate_dice_per_class(...))
+        if val_dice improves → save best_model.pth
+    plot training_curve.png
+    save final_dice_score.txt
+```
 
 **Outputs**
 - `training_curve.png` — line plot of training loss across epochs.
@@ -360,6 +408,18 @@ python train.py   --images_dir /path/to/semantic_MRs   --labels_dir /path/to/sem
 - overlay + split — saved as prediction_<case>_overlay.png
 - Panels: Original Slice, Ground Truth Overlay, Prediction Overlay, GT (left) | Prediction (right) (categorical maps, dashed divider).
 - Designed to make anatomy-aligned agreement clear (overlays) and highlight boundary/shape differences (split view)
+
+**Key methods**
+```python
+def predict():
+    load best_model.pth and set to eval()
+    for each test volume:
+        img = load_nifti()
+        norm_img = apply_same_normalization(img)
+        pred = softmax(model(norm_img)) → argmax(pred)
+        save NIfTI mask as <case>_pred.nii.gz
+        visualize 5-panel overlay (image, GT, prediction)
+```
 
 **CLI**
 ```bash
