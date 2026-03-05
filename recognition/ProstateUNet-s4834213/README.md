@@ -6,7 +6,7 @@ This project implements a **3D Improved U-Net with Context Aggregation Network (
 
 ### Author
 
-Project by: *Ruitao Sun 48342131*  
+Project by: *Jimmy (Ruitao) Sun 48342131*  
 UQ COMP3710 — Pattern Recognition & Analysis  
 Submission for: Hard Difficulty — 3D Prostate Segmentation with CAN3D
 
