@@ -1,10 +1,6 @@
 # Recognition Tasks
-Various recognition tasks solved in deep learning frameworks.
+Medical Image Segmentation: Prostate Cancer Detection (U-Net)
 
 Tasks may include:
-* Image Segmentation
-* Object detection
-* Graph node classification
-* Image super resolution
-* Disease classification
-* Generative modelling with StyleGAN and Stable Diffusion
+* Project Goal:
+Implementation of a Deep Learning pipeline for automated semantic segmentation of prostate MRI scans using the U-Net architecture.
